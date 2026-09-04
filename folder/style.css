@@ -1,0 +1,35 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding:0;
+}
+
+body{
+    
+    overflow-x:hidden; /* desbordar-x :oculto ; es para ocultar el scroll horizontal */
+    min-height: 100vh;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+h1{
+    background:linear-gradient(50deg,#ffd15d,#65ff65);
+    background-clip:text ;
+   -webkit-text-fill-color: transparent; /* Vacío por dentro */
+   -webkit-text-stroke: 2px #ff007f;    /* Borde rosa de 2 píxeles */
+    text-shadow: 0 0 10px #00f2fe, 0 0 20px #00f2fe; /*sombra el texto , hay dos sombras, uno sobre otra*/
+    -webkit-font-smoothing: antialiased; /* Suaviza los bordes de la letra para que no se vean pixeleadas*/
+}
+button{
+    cursor: pointer;/*Es para cuanto cruce el boton cambie de forma a una mano.*/
+    background: linear-gradient(50deg,#ffd15d,#65ff65);/*deg siginifica degrees grados en ingles :50 grados manecillas del reloj*/
+    border-style: none;
+    transition: all 2.5s;
+}
+button:hover {
+backdrop-filter:brightness(2.5);
+box-shadow: 0 0 12px #000 ;
+
+}
